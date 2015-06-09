@@ -1,0 +1,22 @@
+﻿using EPiServer.Core;
+using EPiServer.DataAnnotations;
+
+namespace Domain.Entities.EPiServer.Pages
+{
+    [ContentType(
+        DisplayName = "StartPage",
+        GUID = "a52952b0-4d2a-4b5d-ba5e-2fd626dcbb0e",
+        Description = "")]
+    public class StartPage : PageData
+    {
+        /*
+                [CultureSpecific]
+                [Display(
+                    Name = "Main body",
+                    Description = "The main body will be shown in the main content area of the page, using the XHTML-editor you can insert for example text, images and tables.",
+                    GroupName = SystemTabNames.Content,
+                    Order = 1)]
+                public virtual XhtmlString MainBody { get; set; }
+         */
+    }
+}
