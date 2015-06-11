@@ -294,6 +294,18 @@
       <Project>{bab91794-5763-4538-a0b7-ec36e51f9df8}</Project>
       <Name>Domain.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Domain.Interfaces\Domain.Interfaces.csproj">
+      <Project>{38704F91-E85D-42CC-BEF1-B8620C640CF0}</Project>
+      <Name>Domain.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.Services\Domain.Services.csproj">
+      <Project>{D70CBDF6-81EF-41C2-8A9B-75B376ACBD75}</Project>
+      <Name>Domain.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.DependencyResolution\Infrastructure.DependencyResolution.csproj">
+      <Project>{47314f95-e61f-4136-8180-fe2fec4c3321}</Project>
+      <Name>Infrastructure.DependencyResolution</Name>
+    </ProjectReference>
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
