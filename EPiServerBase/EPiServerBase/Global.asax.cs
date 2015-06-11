@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web.Mvc;
 using System.Web.Optimization;
+using System.Web.Routing;
 using EPiServerBase.App_Start;
 
 namespace EPiServerBase
@@ -10,6 +11,7 @@ namespace EPiServerBase
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
