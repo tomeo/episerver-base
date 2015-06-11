@@ -236,9 +236,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Shared\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />
@@ -264,6 +262,7 @@
     <Content Include="connectionStrings.Release.config">
       <DependentUpon>connectionStrings.config</DependentUpon>
     </Content>
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
