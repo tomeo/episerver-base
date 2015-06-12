@@ -17,3 +17,4 @@ http://world.episerver.com/documentation/Items/Developers-Guide/EPiServer-CMS/8/
 * PageTypeList
 * CategoryList
 * favicon http://stackoverflow.com/questions/487230/serving-favicon-ico-in-asp-net-mvc
+* CachingService
