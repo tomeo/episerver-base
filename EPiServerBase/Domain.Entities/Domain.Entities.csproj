@@ -160,6 +160,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EPiServer\Pages\StandardPage.cs" />
     <Compile Include="EPiServer\Pages\StartPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
