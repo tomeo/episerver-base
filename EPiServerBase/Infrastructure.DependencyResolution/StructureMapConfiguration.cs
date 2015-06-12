@@ -1,11 +1,13 @@
 ﻿using System.Web.Mvc;
+using Domain.Interfaces.Filter;
 using Domain.Interfaces.Services;
 using Domain.Services;
+using Domain.Services.Filters;
 using EPiServer.Framework;
 using EPiServer.Framework.Initialization;
 using EPiServer.ServiceLocation;
 
-namespace EPiServerBase
+namespace Infrastructure.DependencyResolution
 {
     [ModuleDependency(typeof(ServiceContainerInitialization))]
     [InitializableModule]
@@ -17,6 +19,9 @@ namespace EPiServerBase
             {
                 x.For<IPageService>().Use<PageService>();
                 x.For<INavigationService>().Use<NavigationService>();
+                x.For<IVisitorFilterService>().Use<VisitorFilterService>();
+                x.For<IVisitorFilter>().Use<ReadAccessVisitorFilter>();
+                x.For<IVisitorFilter>().Use<VisibleInMenuVisitorFilter>();
             });
 
             DependencyResolver.SetResolver(new StructureMapDependencyResolver(context.Container));

@@ -55,6 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Filters\ReadAccessVisitorFilter.cs" />
+    <Compile Include="Filters\VisibleInMenuVisitorFilter.cs" />
+    <Compile Include="VisitorFilterService.cs" />
     <Compile Include="NavigationService.cs" />
     <Compile Include="PageService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

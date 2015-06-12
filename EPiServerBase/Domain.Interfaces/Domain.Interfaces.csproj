@@ -55,7 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Filter\IVisitorFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IVisitorFilterService.cs" />
     <Compile Include="Services\INavigationService.cs" />
     <Compile Include="Services\IPageService.cs" />
   </ItemGroup>
