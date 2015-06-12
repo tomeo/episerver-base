@@ -8,3 +8,11 @@ The project is setup to run using localdb. This can easily be changed by alterin
 4. Connect to the database using SQL Management Studio using Server Name = (LocalDb)\mssqllocaldb and Windows Authentication.
 5. Activate workflows by following this guide:
 http://world.episerver.com/documentation/Items/Developers-Guide/EPiServer-CMS/8/Workflows/Activating-workflows/
+
+# THINGS I WANT TO ADD
+* Navigation
+* Device Detection
+* Sections
+* ContentFilter
+* PageTypeList
+* CategoryList
