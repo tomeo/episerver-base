@@ -16,6 +16,7 @@ namespace EPiServerBase
             context.Container.Configure(x =>
             {
                 x.For<IPageService>().Use<PageService>();
+                x.For<INavigationService>().Use<NavigationService>();
             });
 
             DependencyResolver.SetResolver(new StructureMapDependencyResolver(context.Container));
