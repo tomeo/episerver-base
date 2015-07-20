@@ -3,11 +3,14 @@ The project is setup to run using localdb. This can easily be changed by alterin
 
 # Using localdb
 1. Install SQL Server Express.
-2. Create EPiServerBase.mdf and place it in EPiServerBase/App_Data
+2. Create EPiServerBase.mdf and place it in EPiServerBase/App_Data (in Visual Studio -> Project -> Add new item -> Visual C# -> SQL Server Database
 3. Initialise the database by opening the NuGet Package Manager and running Initialize-EPiDatabase (more information at http://world.episerver.com/documentation/Items/Developers-Guide/EPiServer-CMS/8/Deployment/About-the-database/).
 4. Connect to the database using SQL Management Studio using Server Name = (LocalDb)\mssqllocaldb and Windows Authentication.
 5. Activate workflows by following this guide:
 http://world.episerver.com/documentation/Items/Developers-Guide/EPiServer-CMS/8/Workflows/Activating-workflows/
+
+# NuGet
+Add EPiServers NuGet feed http://nuget.episerver.com/feed/packages.svc/ in Tools -> Library Package Manager -> Package Manager Settings -> Package Sources
 
 # THINGS I WANT TO ADD
 * Navigation
