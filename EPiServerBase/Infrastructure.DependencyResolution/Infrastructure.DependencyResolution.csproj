@@ -30,39 +30,35 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EPiServer, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.CMS.Core.8.8.1\lib\net45\EPiServer.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.BaseLibrary, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.CMS.Core.8.8.1\lib\net45\EPiServer.BaseLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Data, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.Framework.8.8.1\lib\net45\EPiServer.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Framework, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.Framework.8.8.1\lib\net45\EPiServer.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="StructureMap, Version=2.6.4.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StructureMapConfiguration.cs" />
     <Compile Include="StructureMapDependencyResolver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EPiServer, Version=8.10.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EPiServer.CMS.Core.8.10.0\lib\net45\EPiServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.BaseLibrary">
+      <HintPath>..\packages\EPiServer.CMS.Core.8.10.0\lib\net45\EPiServer.BaseLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Data">
+      <HintPath>..\packages\EPiServer.Framework.8.10.0\lib\net45\EPiServer.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Framework">
+      <HintPath>..\packages\EPiServer.Framework.8.10.0\lib\net45\EPiServer.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=2.6.4.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.40804.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain.Interfaces\Domain.Interfaces.csproj">

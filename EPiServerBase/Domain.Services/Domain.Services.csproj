@@ -30,37 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EPiServer, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.CMS.Core.8.8.1\lib\net45\EPiServer.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.BaseLibrary, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.CMS.Core.8.8.1\lib\net45\EPiServer.BaseLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Data, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.Framework.8.8.1\lib\net45\EPiServer.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Framework, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.Framework.8.8.1\lib\net45\EPiServer.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Filters\ReadAccessVisitorFilter.cs" />
     <Compile Include="Filters\VisibleInMenuVisitorFilter.cs" />
     <Compile Include="VisitorFilterService.cs" />
     <Compile Include="NavigationService.cs" />
     <Compile Include="PageService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain.Entities\Domain.Entities.csproj">
@@ -71,6 +49,24 @@
       <Project>{38704F91-E85D-42CC-BEF1-B8620C640CF0}</Project>
       <Name>Domain.Interfaces</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EPiServer, Version=8.10.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EPiServer.CMS.Core.8.10.0\lib\net45\EPiServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.BaseLibrary, Version=8.10.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EPiServer.CMS.Core.8.10.0\lib\net45\EPiServer.BaseLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Data, Version=8.10.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EPiServer.Framework.8.10.0\lib\net45\EPiServer.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Framework, Version=8.10.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EPiServer.Framework.8.10.0\lib\net45\EPiServer.Framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

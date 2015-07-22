@@ -30,22 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EPiServer, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.CMS.Core.8.8.1\lib\net45\EPiServer.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.BaseLibrary, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.CMS.Core.8.8.1\lib\net45\EPiServer.BaseLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Data, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.Framework.8.8.1\lib\net45\EPiServer.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="EPiServer.Framework, Version=8.8.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPiServer.Framework.8.8.1\lib\net45\EPiServer.Framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
